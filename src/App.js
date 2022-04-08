@@ -16,7 +16,7 @@ const [countries ,setcountries]=useState([]);
 
   useEffect(()=>{
     axios.get('https://restcountries.com/v2/all')
-    .then(response =>setcountries(response.data.result));
+    .then(response =>setcountries(response.data));
   
   },[]);
 
